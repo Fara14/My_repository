@@ -28,7 +28,7 @@ dbase = [
 myBase = []
 for el in dbase:
     myBase.append(el.replace('+', '').replace('(', '').replace(')', '').replace('-', ''))
-print(f"{myBase}\n")
+print(myBase, f"\n")
 
 
 countryQty = []

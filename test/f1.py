@@ -6,4 +6,6 @@ def merge_list(*args):
         else:
             a.append(val)
     return a
+
+
 print(merge_list([0, 0], "nice", {5, 4, 1}, (12, 9), None))

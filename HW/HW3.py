@@ -10,7 +10,8 @@ def shift(lst, steps):
             lst.insert(0, lst.pop())
     return lst
 
-print(shift([4, 5, 6, 7, 8, 9, 0], -2))
+
+print(shift([4, 5, 6, 7, 8, 9, 0], 2))
 
 
 # напишите функцию, которая на вход принимает список и проверяет, имеют ли одинаковую разницу все соседние элементы,
@@ -22,17 +23,19 @@ def has_equal_diff(array):
             return False
     return True
 
+
 print(has_equal_diff([5, 10, 15, 20, 25]))
 
 
-#На вход два списка, нужно вернуть список, который состоит из элементов, общих для этих двух списков.
-def intersection(a, b, newtype):
+# На вход два списка, нужно вернуть список, который состоит из элементов, общих для этих двух списков.
+def intersection(a, b, result):
     for i in a:
         for j in b:
             if i == j:
-                newtype.append(i)
+                result.append(i)
                 break
-    # return list(set(newtype))         для удаления повторений
-    return newtype
+    # return list(set(result))         для удаления повторений
+    return result
+
 
 print(intersection([1, 3, 1, 2, 3, 5], [2, 1, 1, 4, 5, 13, 1], []))
